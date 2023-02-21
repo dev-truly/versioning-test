@@ -9,6 +9,6 @@
     {"type": "perf", "hidden": true},
     {"type": "test", "hidden": true}
   ],
-  "commitUrlFormat": "https://bitbucket.org/allimlab/conventional-commits-test/commits/{{hash}}",
-  "compareUrlFormat": "https://bitbucket.org/allimlab/conventional-commits-test/compare/{{previousTag}}...{{currentTag}}"
+  "commitUrlFormat": "https://github.com/dev-truly/versioning-test/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/dev-truly/versioning-test/compare/{{previousTag}}...{{currentTag}}"
 }
