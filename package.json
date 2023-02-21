@@ -1,0 +1,40 @@
+{
+  "name": "versioning-test",
+  "version": "1.0.2",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo 'No test specified'",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:dev-truly/versioning-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-truly/versioning-test/issues"
+  },
+  "homepage": "https://github.com/dev-truly/versioning-test#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3",
+    "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
