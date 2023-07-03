@@ -1,12 +1,68 @@
+buildscript {
+	repositories {
+		mavenCentral() // or gradlePluginPortal()
+	}
+	dependencies {
+		classpath("gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.79.0")
+	}
+}
+
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.9-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+
+	id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.79.0'
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
+
+task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+	fromRepo = new File(".");
+	readableTagName = ".*/([^/]*)";
+	dateFormat = "HH:mm:ss";
+	timeZone = "Asia/Seoul";
+	removeIssueFromMessage = false;
+	ignoreCommitsIfMessageMatches = ".*Gradle.*";
+	ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
+	untaggedName = "These commits are not included in any tag";
+	noIssueName = "These commits have not issue in their commit comment";
+	file = new File("CHANGELOG_mixed.md");
+	templateContent = """
+# Git Changelog Maven plugin changelog
+
+Changelog of Git Changelog Maven plugin.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+### {{name}}
+  {{#commits}}
+   {{{message}}} *{{commitTime}}*
+
+  {{/commits}}
+
+ {{/issues}}
+
+{{/tags}}
+ """;
+}
+
+tasks.register("generateChangelogs") {
+	doLast { }
+}
+
+generateChangelogs.dependsOn {
+	tasks.findAll { task -> task.name.startsWith('generateGit') }
+}
+
+sourceSets {
+	main.java.srcDirs = ['src/main/java']
+}
 
 configurations {
 	compileOnly {
