@@ -17,19 +17,11 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.30"
+version = "0.4.31"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
-
-// Optional config if you want to configure versioning
-task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
-	suffixSnapshot = true;
-	majorVersionPattern = "^[Bb]reaking"
-	minorVersionPattern = "[Ff]eature"
-	patchVersionPattern = "[Ff]ix"
-}
 
 //
 // Template configured inline
@@ -93,7 +85,7 @@ task writeChangeLog {
 			commandLine 'git', 'tag', version
 		}
 		project.exec {
-			commandLine './gradlew', 'generateChangelogs'
+			commandLine './gradlew', 'gitChangelogTask'
 		}
 	}
 }
