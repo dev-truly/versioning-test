@@ -17,7 +17,7 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.31"
+version = "0.4.32"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
