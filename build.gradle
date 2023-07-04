@@ -17,23 +17,19 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.10"
+version = "0.4.11"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
-task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+//
+// Template configured inline
+//
+
+task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
-	readableTagName = ".*/([^/]*)";
-	dateFormat = "HH:mm:ss";
-	timeZone = "Asia/Seoul";
-	removeIssueFromMessage = false;
-	ignoreCommitsIfMessageMatches = ".*Gradle.*";
-	ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
-	untaggedName = "These commits are not included in any tag";
-	noIssueName = "These commits have not issue in their commit comment";
-	file = new File("CHANGELOG_mixed.md");
+	file = new File("CHANGELOG.md");
 	templateContent = """
 # Git Changelog Maven plugin changelog
 
@@ -42,14 +38,21 @@ Changelog of Git Changelog Maven plugin.
 {{#tags}}
 ## {{name}}
  {{#issues}}
+  {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
 ### {{name}}
+  {{/hasLink}}
+
   {{#commits}}
-   {{{message}}} *{{commitTime}}*
+[{{hash}}](https://github.com/dev-truly/versioning-test/commit/{{hash}}) {{authorName}} *{{commitTime}}*
+
+{{{message}}}
 
   {{/commits}}
 
  {{/issues}}
-
 {{/tags}}
  """;
 }
@@ -70,7 +73,7 @@ task versionUpdate {
 		def versionType = project.property('versionType')
 		def commitMsg = project.property('commitMsg')
 		project.exec {
-			commandLine './gradlew', 'incrementVersion', "--versionIncrementType=$versionType", "--commitMessagePrefix=$commitMsg:\n", "--versionIncrementBranch=master"
+			commandLine './gradlew', 'incrementVersion', "--versionIncrementType=$versionType", "--commitMessagePrefix=$commitMsg\n", "--versionIncrementBranch=master"
 		}
 
 	}
