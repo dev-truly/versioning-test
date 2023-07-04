@@ -5,6 +5,8 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   gradle changelog 추가 *09:36:17*
+
    fix: test *17:30:32*
 
 
