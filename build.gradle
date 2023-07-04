@@ -17,7 +17,7 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.12"
+version = "0.4.13"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
@@ -30,6 +30,7 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
 	file = new File("CHANGELOG.md");
+	timeZone = "Asia/Seoul"
 	templateContent = """
 # Git Changelog Maven plugin changelog
 
