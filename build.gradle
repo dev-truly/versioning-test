@@ -17,7 +17,7 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.17"
+version = "0.4.14"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
@@ -77,13 +77,6 @@ task versionUpdate {
 			commandLine './gradlew', 'incrementVersion', "--versionIncrementType=$versionType", "--commitMessagePrefix=$commitMsg\n", "--versionIncrementBranch=master"
 		}
 
-//		project.exec {
-//			commandLine 'git', 'commit', '--amend', '-m', commitMsg
-//		}
-//
-//		project.exec {
-//			commandLine 'git', 'push'
-//		}
 	}
 }
 
