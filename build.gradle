@@ -17,7 +17,7 @@ plugins {
 }
 
 group = 'com.example'
-version = "0.4.25"
+version = "0.4.26"
 sourceCompatibility = '11'
 
 apply plugin: "com.dipien.semantic-version"
@@ -82,6 +82,17 @@ task versionUpdate {
 		project.exec {
 			commandLine 'git', 'push', '--tags'
 		}*/
+	}
+}
+
+task writeChangeLog {
+	doLast {
+		project.exec {
+			commandLine 'git', 'tag', version
+		}
+		project.exec {
+			commandLine './gradlew', 'generateChangelogs'
+		}
 	}
 }
 
