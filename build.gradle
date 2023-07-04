@@ -85,7 +85,7 @@ task writeChangeLog {
 			commandLine 'git', 'tag', version
 		}
 		project.exec {
-			commandLine './gradlew', 'gitChangelogTask'
+			commandLine './gradlew', 'generateChangelogs'
 		}
 	}
 }
