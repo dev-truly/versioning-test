@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 0.4.18-SNAPSHOT
+### No issue
+
+[454459fbe83e619](https://github.com/dev-truly/versioning-test/commit/454459fbe83e619) dev-sincerity *2023-07-04 14:19:00*
+
+fix: ttt
+
+
 ## 0.4.15-SNAPSHOT
 ### No issue
 
