@@ -3,6 +3,7 @@ buildscript {
 		mavenCentral() // or gradlePluginPortal()
 	}
 	dependencies {
+		classpath("com.dipien:semantic-version-gradle-plugin:2.0.0")
 		classpath("gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.79.0")
 	}
 }
@@ -16,9 +17,10 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = "0.0.2-SNAPSHOT"
 sourceCompatibility = '11'
 
+apply plugin: "com.dipien.semantic-version"
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
