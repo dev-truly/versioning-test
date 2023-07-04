@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class VersioningTestApplication {
 
 	public static void main(String[] args) {
-		System.out.println("시멘");
 		SpringApplication.run(VersioningTestApplication.class, args);
 	}
 

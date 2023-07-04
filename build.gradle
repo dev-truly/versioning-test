@@ -3,7 +3,6 @@ buildscript {
 		mavenCentral() // or gradlePluginPortal()
 	}
 	dependencies {
-		classpath("com.dipien:semantic-version-gradle-plugin:2.0.0")
 		classpath("gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.79.0")
 	}
 }
@@ -13,6 +12,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.9-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 
+	id 'pl.allegro.tech.build.axion-release' version '1.15.1'
 	id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version '1.79.0'
 }
 
@@ -20,7 +20,7 @@ group = 'com.example'
 version = "0.5.9"
 sourceCompatibility = '11'
 
-apply plugin: "com.dipien.semantic-version"
+apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 // Optional config if you want to configure versioning
@@ -77,7 +77,7 @@ generateChangelogs.dependsOn {
 sourceSets {
 	main.java.srcDirs = ['src/main/java']
 }
-task versionUpdate {
+/*task versionUpdate {
 	doLast {
 		def versionType = project.property('versionType')
 		def commitMsg = project.property('commitMsg')
@@ -85,7 +85,7 @@ task versionUpdate {
 			commandLine './gradlew', 'incrementVersion', "--versionIncrementType=$versionType", "--commitMessagePrefix=$commitMsg\n", "--versionIncrementBranch=master"
 		}
 	}
-}
+}*/
 
 task writeChangeLog {
 	doLast {

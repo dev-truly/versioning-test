@@ -3,6 +3,143 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 0.5.9-SNAPSHOT
+### No issue
+
+[1a724275787b1a7](https://github.com/dev-truly/versioning-test/commit/1a724275787b1a7) dev-sincerity *2023-07-04 16:37:48*
+
+안녕합니까gadf
+Changed project version to v0.5.9
+
+
+## 0.5.8-SNAPSHOT
+### No issue
+
+[d2400f4436c5074](https://github.com/dev-truly/versioning-test/commit/d2400f4436c5074) dev-sincerity *2023-07-04 16:29:02*
+
+fix: array parsing issue when multiple spaces were contained in string.
+Changed project version to v0.5.8
+
+
+## 0.5.7-SNAPSHOT
+### No issue
+
+[e6e51c78d956874](https://github.com/dev-truly/versioning-test/commit/e6e51c78d956874) dev-sincerity *2023-07-04 16:27:15*
+
+fix : 안녕합니까123555
+Changed project version to v0.5.7
+
+[a99ab252e39cd53](https://github.com/dev-truly/versioning-test/commit/a99ab252e39cd53) dev-sincerity *2023-07-04 16:19:32*
+
+안녕합니까123555
+Changed project version to v0.5.6
+
+
+## 0.5.5-SNAPSHOT
+### No issue
+
+[a1b287e9cb74700](https://github.com/dev-truly/versioning-test/commit/a1b287e9cb74700) dev-sincerity *2023-07-04 16:05:18*
+
+안녕합니까123554
+Changed project version to v0.5.5
+
+
+## 0.5.4-SNAPSHOT
+### No issue
+
+[70c96915a3960ba](https://github.com/dev-truly/versioning-test/commit/70c96915a3960ba) dev-sincerity *2023-07-04 16:04:34*
+
+안녕합니까
+Changed project version to v0.5.4
+
+
+## 0.5.3-SNAPSHOT
+### No issue
+
+[c2dbacb502a9c7b](https://github.com/dev-truly/versioning-test/commit/c2dbacb502a9c7b) dev-sincerity *2023-07-04 15:44:27*
+
+안녕합니까NONE
+Changed project version to v0.5.3
+
+
+## 0.5.2-SNAPSHOT
+### No issue
+
+[44e76781b636164](https://github.com/dev-truly/versioning-test/commit/44e76781b636164) dev-sincerity *2023-07-04 15:29:44*
+
+안녕합니까BETA
+Changed project version to v0.5.2
+
+[ee863204605844e](https://github.com/dev-truly/versioning-test/commit/ee863204605844e) dev-sincerity *2023-07-04 15:27:31*
+
+안녕합니까RC
+Changed project version to v0.5.1
+
+
+## 0.5.0-SNAPSHOT
+### No issue
+
+[3ecc5876388068d](https://github.com/dev-truly/versioning-test/commit/3ecc5876388068d) dev-sincerity *2023-07-04 15:05:41*
+
+안녕합니까11
+Changed project version to v0.5.0
+
+
+## 0.4.36-SNAPSHOT
+### No issue
+
+[1145034709bac0f](https://github.com/dev-truly/versioning-test/commit/1145034709bac0f) dev-sincerity *2023-07-04 14:56:04*
+
+안녕합니까10
+Changed project version to v0.4.36
+
+
+## 0.4.35-SNAPSHOT
+### No issue
+
+[34d58237dc41c45](https://github.com/dev-truly/versioning-test/commit/34d58237dc41c45) dev-sincerity *2023-07-04 14:55:12*
+
+안녕합니까9
+Changed project version to v0.4.35
+
+
+## 0.4.34-SNAPSHOT
+### No issue
+
+[f73ab0f4a528b95](https://github.com/dev-truly/versioning-test/commit/f73ab0f4a528b95) dev-sincerity *2023-07-04 14:53:01*
+
+안녕합니까8
+Changed project version to v0.4.34
+
+[dec9e068bd29616](https://github.com/dev-truly/versioning-test/commit/dec9e068bd29616) dev-sincerity *2023-07-04 14:52:23*
+
+안녕합니까8
+Changed project version to v0.4.33
+
+[5bac08755fbdae4](https://github.com/dev-truly/versioning-test/commit/5bac08755fbdae4) dev-sincerity *2023-07-04 14:51:16*
+
+안녕합니까8
+Changed project version to v0.4.32
+
+[3d375f10ef8b4bf](https://github.com/dev-truly/versioning-test/commit/3d375f10ef8b4bf) dev-sincerity *2023-07-04 14:50:50*
+
+fix: ttt2
+
+[35f59305e5ca234](https://github.com/dev-truly/versioning-test/commit/35f59305e5ca234) dev-sincerity *2023-07-04 14:49:26*
+
+안녕합니까7
+Changed project version to v0.4.31
+
+
+## 0.4.31-SNAPSHOT
+### No issue
+
+[c5731e6563c3191](https://github.com/dev-truly/versioning-test/commit/c5731e6563c3191) dev-sincerity *2023-07-04 14:48:48*
+
+안녕합니까7
+Changed project version to v0.4.31
+
+
 ## 0.4.30-SNAPSHOT
 ### No issue
 
