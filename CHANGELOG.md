@@ -3,6 +3,87 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 0.4.30-SNAPSHOT
+### No issue
+
+[3f774b1b2da0235](https://github.com/dev-truly/versioning-test/commit/3f774b1b2da0235) dev-sincerity *2023-07-04 14:44:19*
+
+안녕합니까555
+Changed project version to v0.4.30
+
+
+## 0.4.29-SNAPSHOT
+### No issue
+
+[081f21efb35d0a2](https://github.com/dev-truly/versioning-test/commit/081f21efb35d0a2) dev-sincerity *2023-07-04 14:43:33*
+
+안녕합니까555
+Changed project version to v0.4.29
+
+
+## 0.4.28-SNAPSHOT
+### No issue
+
+[3fc9506c8762ebd](https://github.com/dev-truly/versioning-test/commit/3fc9506c8762ebd) dev-sincerity *2023-07-04 14:38:34*
+
+안녕합니까555
+Changed project version to v0.4.28
+
+
+## 0.4.27-SNAPSHOT
+### No issue
+
+[054094738ea3b6a](https://github.com/dev-truly/versioning-test/commit/054094738ea3b6a) dev-sincerity *2023-07-04 14:34:18*
+
+안녕합니까3
+Changed project version to v0.4.27
+
+
+## 0.4.26-SNAPSHOT
+### No issue
+
+[8befbdcb316a3ec](https://github.com/dev-truly/versioning-test/commit/8befbdcb316a3ec) dev-sincerity *2023-07-04 14:32:03*
+
+안녕합니까
+Changed project version to v0.4.26
+
+
+## 0.4.25-SNAPSHOT
+### No issue
+
+[bd9210b920899d3](https://github.com/dev-truly/versioning-test/commit/bd9210b920899d3) dev-sincerity *2023-07-04 14:29:34*
+
+안녕합니까
+Changed project version to v0.4.25
+
+
+## version
+### No issue
+
+[a3bd669a530ebc0](https://github.com/dev-truly/versioning-test/commit/a3bd669a530ebc0) dev-sincerity *2023-07-04 14:28:35*
+
+안녕합니까
+Changed project version to v0.4.24
+
+[18005b8c313dff7](https://github.com/dev-truly/versioning-test/commit/18005b8c313dff7) dev-sincerity *2023-07-04 14:28:00*
+
+안녕합니까
+Changed project version to v0.4.23
+
+[11b6e8e0874f684](https://github.com/dev-truly/versioning-test/commit/11b6e8e0874f684) dev-sincerity *2023-07-04 14:27:00*
+
+안녕합니까
+Changed project version to v0.4.22
+
+
+## 0.4.20-SNAPSHOT
+### No issue
+
+[1002ee79f1cf68e](https://github.com/dev-truly/versioning-test/commit/1002ee79f1cf68e) dev-sincerity *2023-07-04 14:22:53*
+
+fix: ttt2
+
+
 ## 0.4.18-SNAPSHOT
 ### No issue
 
