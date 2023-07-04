@@ -22,7 +22,7 @@ sourceCompatibility = '11'
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
+	fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
 	readableTagName = ".*/([^/]*)";
 	dateFormat = "HH:mm:ss";
 	timeZone = "Asia/Seoul";
